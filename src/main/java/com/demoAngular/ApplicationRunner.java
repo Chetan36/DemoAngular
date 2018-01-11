@@ -36,19 +36,51 @@ public class ApplicationRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
+		User user11 = new User();
+		user11.setId("11");
+		user11.setName("Mr. Nice");
+		
+		User user12 =  new User();
+		user12.setId("12");
+		user12.setName("Narco");
+		
+		User user13 =  new User();
+		user13.setId("13");
+		user13.setName("Bombasto");
+		
+		User user14 =  new User();
+		user14.setId("14");
+		user14.setName("Celeritas");
+		
+		User user15 =  new User();
+		user15.setId("15");
+		user15.setName("Magneta");
+		
+		User user16 =  new User();
+		user16.setId("16");
+		user16.setName("RubberMan");
+		
+		User user17 =  new User();
+		user17.setId("17");
+		user17.setName("Dynama");
+		
+		User user18 =  new User();
+		user18.setId("18");
+		user18.setName("Dr IQ");
+		
+		User user19 =  new User();
+		user19.setId("19");
+		user19.setName("Magma");
+		
+		User user20 =  new User();
+		user20.setId("20");
+		user20.setName("Tornado");
+		
 		userRepository.deleteAll();
 		userRepository.save(
 				Arrays.asList(
-						new User("11", "Mr. Nice"),
-						new User("12", "Narco"),
-						new User("13", "Bombasto"),
-						new User("14", "Celeritas"),
-						new User("15", "Magneta"),
-						new User("16", "RubberMan"),
-						new User("17", "Dynama"),
-						new User("18", "Dr IQ"),
-						new User("19", "Magma"),
-						new User("20", "Tornado")
+						user11, user12, user13, user14, user15,
+						user16, user17, user18, user19, user20
 						)
 				);
 	}
