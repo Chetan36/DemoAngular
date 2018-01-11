@@ -10,7 +10,7 @@ public interface UserService {
 	
 	User getOneUserWithId(String id);
 	
-	User getOneUserWithUserName(String userId);
+	User getOneUserWithName(String name);
 	
 	User addNewUser(User user);
 	

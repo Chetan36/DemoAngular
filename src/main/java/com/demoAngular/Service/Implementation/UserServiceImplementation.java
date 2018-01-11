@@ -28,8 +28,8 @@ public class UserServiceImplementation implements UserService {
 	}
 	
 	@Override
-	public User getOneUserWithUserName(String userName) {
-		User user = this.userRepository.findByUserName(userName);
+	public User getOneUserWithName(String name) {
+		User user = this.userRepository.findByName(name);
 		return user;
 	}
 
@@ -44,8 +44,8 @@ public class UserServiceImplementation implements UserService {
 	public User updateExistingUser(String id, User user) {
 		User dbUser = this.userRepository.findById(id);
 		
-		if(!user.getUserName().equals(null))	{
-			dbUser.setUserName(user.getUserName());
+		if(!user.getName().equals(null))	{
+			dbUser.setName(user.getName());
 		}
 		
 		this.userRepository.save(dbUser);		
