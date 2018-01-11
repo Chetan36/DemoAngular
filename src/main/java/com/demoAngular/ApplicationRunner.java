@@ -83,6 +83,8 @@ public class ApplicationRunner implements CommandLineRunner {
 						user16, user17, user18, user19, user20
 						)
 				);
+		
+		user11 = user12 = user13 = user14 = user15 = user16 = user17 = user18 = user19 = user20 = null;
 	}
 
 }
