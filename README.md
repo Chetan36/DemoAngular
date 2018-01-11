@@ -10,3 +10,6 @@
 |Update a user by ID	|`PUT`		|`/demoAngular/app/user/{id}`
 |Delete a user by ID	|`DELETE`	|`/demoAngular/app/user/{id}`
 |Delete all users		|`DELETE`	|`/demoAngular/app/user/all`
+
+
+> You need to run the application in eclipse and it automatically updates the mongo database.
