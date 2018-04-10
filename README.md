@@ -12,4 +12,5 @@
 |Delete all users		|`DELETE`	|`/demoAngular/app/user/all`	|
 
 
+> You will need mongodb for this application
 > You need to run the application in eclipse, then it automatically updates the mongo database.
